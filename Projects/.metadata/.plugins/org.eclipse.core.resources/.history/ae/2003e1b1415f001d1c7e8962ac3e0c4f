@@ -1,0 +1,17 @@
+package edu.jspider.LambdaExpression;
+
+import java.util.Collections;
+import java.util.List;
+
+public class BookService {
+
+	public static List<Book> booksInSortedOrder(List<Book> list)
+	{
+		list=BookDAO.bookList();
+		Collections.sort(null);
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}

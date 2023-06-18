@@ -1,0 +1,13 @@
+package edu.jspider.Clone;
+
+public class StudentDriver {
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Address address = new Address("Ranchi", "Jharkhand", "India");
+		Student student1 = new Student("Arshad Alam", 101, address);
+		Student student2 = (Student)student1.clone();
+		System.out.println(student1);
+		System.out.println(student2);
+		student2.studentAddress.city=("Bengaluru");
+	}
+}
